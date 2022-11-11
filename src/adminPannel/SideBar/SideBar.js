@@ -32,9 +32,9 @@ const SideBar = () => {
 
                                 <div variant="dark">
                                     <p>
-                                        <Link className='text-decoration-none text-light ps-4' to={`/admin/${topic}-insert`}>{topic} Insert</Link>
+                                        <Link className='text-decoration-none text-light ps-4' to={`/admin/create-${topic}`}>Create {topic}</Link>
                                     </p>
-                                    <p><Link className='text-decoration-none text-light ps-4' to={`/admin/${topic}-update`}>{topic} Update</Link></p>
+                                    <p><Link className='text-decoration-none text-light ps-4' to={`/admin/update-${topic}`}>Update {topic}</Link></p>
                                     <p><Link className='text-decoration-none text-light ps-4' to={`/admin/${topic}-list`}>{topic} List</Link></p>
                                 </div>
                             </div>

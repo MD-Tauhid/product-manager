@@ -13,6 +13,10 @@ import Contact from '../../components/Contact/Contact';
 import Products from '../../layouts/Products';
 import AllProducts from '../../components/AllProducts/AllProducts';
 import CategoryProduct from '../../components/CategoryProduct/CategoryProduct';
+import CreateProduct from '../../adminPannel/CreateProduct/CreateProduct';
+import CreateSubCategory from '../../adminPannel/CreateSubCategory/CreateSubCategory';
+import CreateCategory from '../../adminPannel/CreateCategory/CreateCategory';
+import CreatePost from '../../adminPannel/CreatePost/CreatePost';
 
 export const CLIENT_URL = "https://art.emporia-bd.com/art_api/api/v1/art";
 
@@ -68,6 +72,22 @@ export const routes = createBrowserRouter([
             {
                 path:'/admin/register',
                 element: <Register></Register>
+            },
+            {
+                path:'/admin/create-Product',
+                element:<CreateProduct></CreateProduct>
+            },
+            {
+                path:'/admin/create-Sub-Category',
+                element:<CreateSubCategory></CreateSubCategory>
+            },
+            {
+                path:'/admin/create-Category',
+                element:<CreateCategory></CreateCategory>
+            },
+            {
+                path:'/admin/create-Post',
+                element:<CreatePost></CreatePost>
             },
         ]
     },
